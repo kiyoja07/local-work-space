@@ -25,7 +25,7 @@ function handleSubmit(event) {
 
 function askForName() {
     form.classList.add(SHOWING_CN);
-    form.addEventListener("submit", handleSubmit); // 폼의 정보를 서버로 전송
+    form.addEventListener("submit", handleSubmit); // submit : 폼의 정보를 서버로 전송
 }
 
 function paintGreeting(text) {
