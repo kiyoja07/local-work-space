@@ -24,7 +24,13 @@ body {
     z-index: -1;
     animation: fadeIn 0.5s linear;
 }
-
+.bgImageCutHeight {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
  
 .css-clock {
     margin: 10vh auto 0 auto;
