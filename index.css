@@ -24,13 +24,6 @@ body {
     z-index: -1;
     animation: fadeIn 0.5s linear;
 }
-.bgImageCutHeight {
-    width: 100%;
-    height: auto;
-    margin-left: 0;
-    z-index: -1;
-    animation: fadeIn 0.5s linear;
-}
  
 .css-clock {
     margin: 10vh auto 0 auto;
@@ -39,9 +32,20 @@ body {
 }
 
 .js-hello {
-    margin: 20vh auto 0 auto;
+    margin: 5vh auto 0 auto;
     text-align: center;
     font-size: 30px;
+}
+
+.css-toDoForm {
+    margin: 5vh auto 0 auto;
+    text-align: center;
+}
+
+.css-toDoList {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn {

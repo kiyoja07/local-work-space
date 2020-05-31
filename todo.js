@@ -1,11 +1,11 @@
 
-const toDoForm = document.querySelector(".js-toForm"), 
+const toDoForm = document.querySelector(".js-toDoForm"), 
     toDoInput = toDoForm.querySelector("input"), 
     toDoList = document.querySelector(".js-toDoList");
 
 const TODOS_LS = "toDos";
 
-let toDos = [];
+let toDos = []; // toDos 저장하는 array 선언
 
 function deleteToDo(event) {
     const btn = event.target;
@@ -38,12 +38,12 @@ function paintToDo(text) {
         text: text,
         id: newId
     };
-    toDos.push(toDoObj);
+    toDos.push(toDoObj); // push() -> array의 마지막에 요소 추가
     saveToDos();
 }
 
 function handleSubmit(event) {
-    event.preventDefault();
+    event.preventDefault(); // preventDefault() -> 태그의 고유 동작을 중단
     const currentValue = toDoInput.value;
     paintToDo(currentValue);
     toDoInput.value = "";
