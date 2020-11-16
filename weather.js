@@ -11,7 +11,7 @@ function getWeather(lat, lon) {
         return response.json();
     })
     .then (function(json) {
-        const temperature = json.main.temp;
+        const temperature = json.main.temp.toFixed(1); // 소수점 1자리로 반올림
         const place = json.name;
         weather.innerText = `${temperature}°C @ ${place}`;
     })
